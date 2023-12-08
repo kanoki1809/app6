@@ -5,8 +5,7 @@ import numpy as np
 
 class_list={'1':'Nam','0':'Nữ'}
 
-st.title(' ứng dụng dự đoán giới tính của người Việt Nam')
-dựa trên họ tên.')
+st.title(' ứng dụng dự đoán giới tính của người Việt Nam dựa trên họ tên.')
 
 #image = Image.open('')
 #st.image(image)
