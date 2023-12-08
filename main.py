@@ -3,20 +3,21 @@ from PIL import Image
 import pickle as pkl
 import numpy as np
 
-class_list={'0':'Negative','1':'Neutral','2':'Postive'}
+class_list={'0':'Nam','1':'Nữ'}
 
-st.title('ứng dụng nhận dạng cảm xúc từ câu phản hồi bằng văn bản của người dùng')
+st.title(' ứng dụng dự đoán giới tính của người Việt Nam')
+dựa trên họ tên.')
 
 #image = Image.open('')
 #st.image(image)
 
-input_ec= open('ec_vsfc.pkl','rb')
+input_ec= open('ec_vinames.pkl','rb')
 encoder= pkl.load(input_ec)
 
-input_md= open('lrc_vsfc.pkl','rb')
+input_md= open('lrc_vinames.pkl','rb')
 model= pkl.load(input_md)
 
-st.header('Viết đánh giá')
+st.header('Họ tên')
 txt= st.text_area('','')
 
 if txt != '':
